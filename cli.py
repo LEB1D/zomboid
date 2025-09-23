@@ -1,5 +1,7 @@
-from main import Inventory  # Ваш клас Inventory у окремому файлі
+from main import Inventory
 import sys
+
+# Для виклику меню потрібно ввести цю команду у термінал"python cli.py data\items.csv"
 
 
 def print_menu():

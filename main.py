@@ -49,3 +49,23 @@ class Inventory:
         for i in filtered:
             counter[i.condition] += i.amount
         return {cond: round(amt/total*100, 2) for cond, amt in counter.items()}
+
+
+inv = Inventory("data\items.csv")
+
+print("=== Search by name'Nails'===")
+print(inv.search_by_name("Nails"))
+
+print("=== Search by ID ===")
+print(inv.get_by_id(3))
+
+percent_all = inv.state_percentages()
+print("Відсоток по стану всіх предметів:")
+for cond, pct in percent_all.items():
+    print(f"{cond}: {pct}%")
+
+
+percent_nails = inv.state_percentages("Nails")
+print("\nВідсоток по стану предметів з назвою 'Nails':")
+for cond, pct in percent_nails.items():
+    print(f"{cond}: {pct}%")
