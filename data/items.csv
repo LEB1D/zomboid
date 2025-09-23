@@ -1,0 +1,12 @@
+ID,Name,Type,Condition,Amount
+1,Hammer,Tool,Good,2
+2,Nails,Fateners,Worm,200
+3,Axe,Tool/Weapon,Good,1
+4,Baseball Bat,Weapon,Used,3
+5,Pistol,Weapon,Mint,2
+6,Canned Beans,Food,Mint,5
+7,Bandage,Medical,Good,15
+8,Water Bottle,Container,Used,2
+9,Flashlight,Tool,Good,3
+10,Generator,Machine,Mint,1
+11,Nails,Fateners,Used,100
