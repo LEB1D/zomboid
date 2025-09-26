@@ -24,11 +24,11 @@ class Inventory:
                     row["ID"], row["Name"], row["Type"], row["Condition"], row["Amount"]
                 ))
 
-    # def show_page(self, page, page_size=10):
-    #     start = (page - 1) * page_size
-    #     end = start + page_size
-    #     for item in self.items[start:end]:
-    #         print(item)
+    def show_page(self, page, page_size=10):
+        start = (page - 1) * page_size
+        end = start + page_size
+        for item in self.items[start:end]:
+            print(item)
 
     def get_by_id(self, id_):
         return [i for i in self.items if i.id == id_]
